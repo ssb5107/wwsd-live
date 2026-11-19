@@ -35,3 +35,15 @@ body{background:radial-gradient(circle at 75% 8%,#63452550,transparent 28%),repe
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .meme{position:relative;overflow:hidden}.meme:after{content:'CASE CLOSED';position:absolute;right:12px;bottom:10px;border:3px solid #ffcb78;color:#ffcb78;padding:5px 9px;font:900 13px ui-monospace,monospace;letter-spacing:.15em;transform:rotate(-12deg);animation:stampIn .55s .3s both}.meme .m-icon{animation:noirReveal .7s both}.scene .art:after{content:'EVIDENCE A';position:absolute;top:8px;left:8px;color:#ffcd83;font:900 10px ui-monospace,monospace;letter-spacing:.17em;opacity:.8}.scene .art{position:relative}
 @keyframes stampIn{from{opacity:0;transform:scale(2.4) rotate(-12deg)}to{opacity:.85;transform:scale(1) rotate(-12deg)}}
+
+/* Overnight AI Lord comic panels */
+.comic-scene-art{background:linear-gradient(0deg,#10131bcc,#10131b15),url('noir-boardroom.png') center/cover;border:3px solid #f1b861;box-shadow:6px 6px 0 #08090d;overflow:hidden}
+.comic-scene-art .art-icon{font-size:58px;text-shadow:3px 3px #090a0d,0 0 15px #090a0d}
+.comic-scene-art .art-word{background:#11141dd9;padding:7px 10px;color:#ffd28a;max-width:90%;text-shadow:1px 1px #000}
+.meme.punch{min-height:280px;background:linear-gradient(90deg,#10131deb,#10131d9c),url('noir-victory.png') center/cover;isolation:isolate}
+.reveal-art{display:none}
+.meme.punch strong,.meme.punch small,.meme.punch .m-icon{position:relative;z-index:1;max-width:700px}
+.meme.punch strong{background:#11141dbe;padding:10px 16px;border:2px solid #efb960;box-shadow:5px 5px 0 #090b10}
+.player-entry:before{content:'THE OVERNIGHT AI LORD';position:absolute;right:2%;top:3%;font:900 clamp(18px,3vw,42px) Georgia,serif;letter-spacing:.07em;color:#ffd48d;transform:rotate(-4deg);text-shadow:4px 4px #08090c;z-index:1}
+.noir-hero:after{content:'OVERNIGHT AI LORD';position:absolute;top:14px;right:-51px;padding:7px 56px;background:#eeb25b;color:#151720;font:900 11px ui-monospace,monospace;letter-spacing:.08em;transform:rotate(35deg);box-shadow:0 2px 0 #8c5827}
+@media(max-width:800px){.player-entry:before{display:none}.meme.punch{min-height:230px}}
